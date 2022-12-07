@@ -1,6 +1,6 @@
-.portfolio {
+.portfolio{
     justify-content: center;
-    background-color: #111;
+    background-color: #001830;
     padding: 5em 6em 5em 6em;
 }
 
@@ -53,14 +53,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    /* .pic-ctn {
-        display: block !important;
-    }
-
-    .p_image  {
-        display: none !important;
-    } */
-    
 
   }
 
