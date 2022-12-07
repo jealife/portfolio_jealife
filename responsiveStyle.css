@@ -5,7 +5,7 @@
   }
   .m_child{
     flex-direction: column-reverse;
-    padding: 12em 2em 0 2em ;
+    padding: 12em 3em 0 3em ;
     text-align: center;
   }
 
@@ -33,11 +33,66 @@
     margin: 10px;
   }
   .name{
+    display: block;
     text-align: center;
-    padding: 0 ;
   }
+  .name{
+    padding: 0;
 
 }
+
+}
+
+
+ /* A propos */
+ @media (max-width: 900px) {
+  .down{
+    padding: 5em 2em 3em 2em;
+  }
+  .first_image{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .about{
+    display: none;
+
+  }
+  .ab-block1{
+    padding:5em 3em 5em 2em ;
+    text-align: center;
+  }
+  
+  .ab-{
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.txt-about span{
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0;
+}
+  
+ }
+
+ /* simple contact */
+ @media (max-width: 900px) {
+  .simple-contact{
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+  }
+  .down-contact{
+    background-position: center;
+  }
+ }
+  
+
+
+
 
 /* Portfolio */
 
@@ -49,12 +104,7 @@
 
   .portfolio {
     padding: 5vw ;
-  }
-  .down {
-    background-color: #111;
-    padding: 0 1em 0 1em;
-    justify-content: center;
- } /* 
+  } /* 
   .sec-image{
     min-width: 2vw;
     
