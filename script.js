@@ -113,3 +113,13 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 }
+/***************   Stop Scroll************* */
+
+document.querySelector('#scrollable').addEventListener('wheel', preventScroll, {passive: false});
+
+function preventScroll(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    return false;
+}
