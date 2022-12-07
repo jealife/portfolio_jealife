@@ -68,6 +68,7 @@ nav {
 }
 
 .fixed{
+  transition: 1s;
   background-color: #001830;
   box-shadow: rgba(255, 255, 255, 0.274) 0px 8px 24px;
 
