@@ -1,0 +1,36 @@
+.footer {
+    width: 100%;
+    min-height: 20vh;
+    background-color: #00162B;
+    bottom: 0;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-right{
+    margin-top: 1rem;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.copy-right span{
+    font-size: 0.9rem;
+    color: #748FA8;
+}
+
+.social i:hover{
+    color:  #748FA8;
+    transition: 0.5s;
+}
