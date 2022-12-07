@@ -105,7 +105,10 @@
   .portfolio {
     padding: 5vw ;
     background-color: #fff;
-  } /* 
+  } 
+  #porto{
+    color:#111;
+  }/* 
   .sec-image{
     min-width: 2vw;
     
