@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body,html{
+    scroll-behavior: smooth;
+    transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    
+    
+}
+
+.m_parent{
+    background-color: #545454;
+    background-image: url(bg\ \(2\).jpg);
+    background-size:cover;
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+}
+
+.m_child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.social-media{
+    flex: 2%;
+
+}
+
+.social-media{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.social-media i{
+    color: #fff;
+    margin-top: 1.5em;
+
+}
+
+.name{
+    padding-left: 5em;
+    flex: 80%;
+
+}
+.name h1 {
+   
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+
+}
+
+.name p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #fff;
+
+}
+.hr_1{
+    width: 100px;
+    position: absolute;
+    margin: -11em 0 2em 0 ;
+    transform: rotate(90deg);
+}
+.hr_2{
+    position: absolute;
+    margin: 20em 0 2em 0 ;
+    width: 100px;
+    
+    transform: rotate(90deg);
+}
+
+.vertical-line{
+    height: 2em;
+    background-color:#fff ;
+}
+
+
+/*/////////////////////////////////////////////////////////*/
+
+.down{
+
+    background-color: #111;
+    padding: 0 5em 0 5em;
+
+}
+
+.about{
+    padding: 5rem 0 5rem 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+
+}
+
+.first_image{
+    
+    width: 41vw;
+    height: 50vh;
+    background-image: url(nat2.jpg);
+    border-radius: 4px;
+    background-size: cover;
+}
+
+.sec-image{
+    border-radius: 4px;
+    min-height:80vh;
+    background-image: url(nature.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sec-image img{
+    border-radius: 5px;
+    position: relative;
+    width: 15em;
+    top: 1.2em;
+    right: 12em;
+
+}
+.ab-block1{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.txt-about{
+    margin-top: 2em;
+    color: #fff;
+}
+
+.txt-about span{
+    color: #fff;
+    font-size: 0.9rem;
+    margin-right: 1em;
+}
+
+.ab-block2{
+    flex: 1;
+    height: 80vh;
+    width: 100vw;
+    margin-left: 1em;
+
+}
+
+
+.content-about{
+    display: flex;
+
+}
+
+/* Seconde section*/
+
+.down-contact{
+    align-items: center;
+    min-height: 50vh;
+    background-color: #545454;
+    background-image: url(wonder.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode:  soft-light ;
+    
+}
+.simple-contact{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px) ;
+    background-blend-mode:  soft-light ;
+    
+    
+}
+
+#cont-txt{
+   color: #fff;
+   font-size: 2rem;
+   font-weight: 800;
+}
+
+.btn-contact{
+    border: none;
+    margin-left: 1rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    color: #111;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.btn-contact:hover{
+    background-color:#EA4FE7 ;
+    color: #fff;
+}
+
+.btn-contact:active{
+    background-color: #BF35bc;
+    color: #fff;
+}
+
+
+
+/*    third section  */
+
+.portfolio{
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+    padding: 5em 0 5em 0;
+}
+
+
+
+  .pic-ctn{
+    display: none;
+  }

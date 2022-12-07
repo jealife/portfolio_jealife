@@ -1,0 +1,67 @@
+.portfolio {
+    justify-content: center;
+    background-color: #111;
+    padding: 5em 6em 5em 6em;
+}
+
+#porto {
+    color: #fff;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.block-image img {
+    max-width: 100%;
+    height: auto;
+    display: inlibe-block;
+
+}
+
+.p_image  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.p_image>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.p_image {
+    display: grid;
+    grid-gap: 0.6em;
+    grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr));
+    grid-auto-flow: dense;
+}
+
+.p_image .wide {
+    grid-column: span 2;
+}
+
+.p_image .tall {
+    grid-row: span 2;
+}
+
+.p_image .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media only screen and (max-width: 768px) {
+    /* .pic-ctn {
+        display: block !important;
+    }
+
+    .p_image  {
+        display: none !important;
+    } */
+    
+
+  }
+
+
