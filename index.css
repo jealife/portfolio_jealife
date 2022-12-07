@@ -210,12 +210,12 @@ body,html{
 }
 
 .btn-contact:hover{
-    background-color:#EA4FE7 ;
+    background-color:#0057A8 ;
     color: #fff;
 }
 
 .btn-contact:active{
-    background-color: #BF35bc;
+    background-color: #08355f;
     color: #fff;
 }
 
