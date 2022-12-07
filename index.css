@@ -15,7 +15,7 @@ body,html{
 }
 
 .m_parent{
-    background-color: #545454;
+    background-color: #435764;
     background-image: url(bg\ \(2\).jpg);
     background-size:cover;
     background-blend-mode: soft-light;
@@ -46,6 +46,10 @@ body,html{
     color: #fff;
     margin-top: 1.5em;
 
+}
+.social-media i:hover{
+    color: #0057A8;
+    transition: 0.5s;
 }
 
 .name {
@@ -89,7 +93,7 @@ body,html{
 
 .down{
 
-    background-color: #111;
+    background-color: #001830;
     padding: 0 5em 0 5em;
 
 }
