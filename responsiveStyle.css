@@ -1,7 +1,14 @@
   /* Home screen  */
 @media only screen and (max-width: 768px) {
+  
   .m_parent{
     background-position: center;
+    background-color: #43535e;
+    background-image: url(./bg\ \(2\).JPG);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    
   }
   .m_child{
     flex-direction: column-reverse;
@@ -104,11 +111,7 @@
 
   .portfolio {
     padding: 5vw ;
-    background-color: #fff;
-  } 
-  #porto{
-    color:#111;
-  }/* 
+  } /* 
   .sec-image{
     min-width: 2vw;
     
