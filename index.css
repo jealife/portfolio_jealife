@@ -1,53 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-body,html{
+
+body,
+html {
     scroll-behavior: smooth;
     transition: 0.5s;
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
-*{
-    margin: 0 ;
-    padding: 0 ;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    
-    
+
+
 }
 
-.m_parent{
+.m_parent {
     background-color: #43535e;
     background-image: url(bg\ \(2\).jpg);
-    background-size:cover;
+    background-size: cover;
     background-blend-mode: soft-light;
     background-attachment: fixed;
 }
 
-.m_child{
+.m_child {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.social-media{
+.social-media {
     flex: 2%;
 
 }
 
-.social-media{
-    
+.social-media {
+
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
     align-items: center;
 
 }
-.social-media i{
+
+.social-media i {
     color: #fff;
     margin-top: 1.5em;
 
 }
-.social-media i:hover{
+
+.social-media i:hover {
     color: #0057A8;
     transition: 0.5s;
 }
@@ -57,6 +61,7 @@ body,html{
     flex: 80%;
 
 }
+
 .name #name {
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
@@ -65,40 +70,48 @@ body,html{
 
 }
 
-.name  {
+.name {
     color: #fff;
 
 }
-.hr_1{
+
+.hr_1 {
+    background: #ffff;
     width: 100px;
     position: absolute;
-    margin: -11em 0 2em 0 ;
-    transform: rotate(90deg);
-}
-.hr_2{
-    position: absolute;
-    margin: 20em 0 2em 0 ;
-    width: 100px;
-    
+    margin: -11em 0 2em 0;
     transform: rotate(90deg);
 }
 
-.vertical-line{
+.hr_2 {
+    position: absolute;
+    margin: 20em 0 2em 0;
+    width: 100px;
+
+    transform: rotate(90deg);
+}
+
+.vertical-line {
     height: 2em;
-    background-color:#fff ;
+    background-color: #fff;
 }
 
+.myName {
+    animation: zoomInDown;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
 
 /*/////////////////////////////////////////////////////////*/
 
-.down{
+.down {
 
     background-color: #001830;
     padding: 0 5em 0 5em;
 
 }
 
-.about{
+.about {
     padding: 5rem 0 5rem 0;
     display: flex;
     min-height: 100vh;
@@ -106,8 +119,8 @@ body,html{
 
 }
 
-.first_image{
-    
+.first_image {
+
     width: 41vw;
     height: 50vh;
     background-image: url(nat2.jpg);
@@ -115,15 +128,15 @@ body,html{
     background-size: cover;
 }
 
-.sec-image{
+.sec-image {
     border-radius: 4px;
-    min-height:80vh;
+    min-height: 80vh;
     background-image: url(nature.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.sec-image img{
+.sec-image img {
     border-radius: 5px;
     position: relative;
     width: 15em;
@@ -131,24 +144,26 @@ body,html{
     right: 12em;
 
 }
-.ab-block1{
+
+.ab-block1 {
     flex: 2;
     display: flex;
     flex-direction: column;
 }
-.txt-about{
+
+.txt-about {
 
     margin-top: 2em;
     color: #fff;
 }
 
-.txt-about span{
+.txt-about span {
     color: #fff;
     font-size: 0.9rem;
-    padding: 0  15vw 0 0;
+    padding: 0 15vw 0 0;
 }
 
-.ab-block2{
+.ab-block2 {
     flex: 1;
     height: 80vh;
     width: 100vw;
@@ -156,19 +171,22 @@ body,html{
 
 }
 
-.ab-{
+.ab- {
     display: none;
 }
 
 
-.content-about{
+.content-about {
     display: flex;
 
 }
 
 /* Seconde section*/
+:root {
+    --animate-duration: 2s;
+}
 
-.down-contact{
+.down-contact {
     align-items: center;
     min-height: 50vh;
     background-color: #545454;
@@ -176,31 +194,32 @@ body,html{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode:  soft-light ;
-    
+    background-blend-mode: soft-light;
+
 }
-.simple-contact{
+
+.simple-contact {
     min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(1px) ;
-    background-blend-mode:  soft-light ;
-    
-    
+    backdrop-filter: blur(1px);
+    background-blend-mode: soft-light;
+
+
 }
 
-#cont-txt{
-   color: #fff;
-   font-size: 2rem;
-   font-weight: 800;
+#cont-txt {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
 }
 
-.btn-contact{
+.btn-contact {
     border: none;
     margin-left: 1rem;
     padding: 1rem;
-    border-radius: 0.3rem;
+    border-radius: 1rem;
     background-color: #fff;
     color: #111;
     font-size: 1.2rem;
@@ -209,12 +228,21 @@ body,html{
     cursor: pointer;
 }
 
-.btn-contact:hover{
-    background-color:#0057A8 ;
+
+
+.child_spl_c2:hover .btn-contact {
+    
+    cursor: pointer;
+    background-color: #0057A8;
     color: #fff;
+    transition: 0.5s;
+    animation: bounceIn;
+    animation-duration: 1s;
+    border-radius: 2rem;
+    
 }
 
-.btn-contact:active{
+.child_spl_c2:active  .btn-contact{
     background-color: #08355f;
     color: #fff;
 }
@@ -223,7 +251,7 @@ body,html{
 
 /*    third section  */
 
-.portfolio{
+.portfolio {
     justify-content: center;
     background-color: rgb(231, 231, 231);
     padding: 5em 0 5em 0;
@@ -231,6 +259,6 @@ body,html{
 
 
 
-  .pic-ctn{
+.pic-ctn {
     display: none;
-  }
+}
