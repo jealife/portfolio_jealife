@@ -7,8 +7,6 @@
     background-image: url(./bg\ \(2\).JPG);
     background-size: cover;
     background-blend-mode: soft-light;
-    background-attachment: fixed;
-    
   }
   .m_child{
     flex-direction: column-reverse;
