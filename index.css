@@ -5,6 +5,7 @@ html {
     scroll-behavior: smooth;
     transition: 0.5s;
     font-family: 'Poppins', sans-serif;
+    background-color: #001830;
 
 }
 
@@ -221,16 +222,22 @@ html {
     padding: 1rem;
     border-radius: 1rem;
     background-color: #fff;
-    color: #111;
+    
     font-size: 1.2rem;
     font-weight: 600;
 
     cursor: pointer;
 }
+.btn-contact a{
+    color: #111;
+}
+.child_spl_c2:hover a{
+
+    color: #fff;
+}
 
 
-
-.child_spl_c2:hover .btn-contact {
+.child_spl_c2:hover .btn-contact{
     
     cursor: pointer;
     background-color: #0057A8;
@@ -259,6 +266,3 @@ html {
 
 
 
-.pic-ctn {
-    display: none;
-}
