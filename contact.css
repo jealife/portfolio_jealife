@@ -1,0 +1,126 @@
+.m_form {
+    min-height: 90vh;
+    background-color: #001830;
+    /* background-image: url(./bg\ \(3\).JPG); */
+    /* background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    background-attachment: fixed; */
+}
+
+.m_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+.picture {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(7, 44, 82, 0.9780287114845938) 45%, rgba(0, 212, 255, 1) 100%);
+    width: 20em;
+    height: 20em;
+    border-radius: 100%;
+    position: absolute;
+}
+.picture{
+    margin: -5rem 0 0 -10rem;
+}
+
+
+.formulaire {
+    display: flex;
+}
+
+.form {
+    text-align: center;
+    background-color: #3144528f;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: #c2daeb3a solid 1px;
+    min-height: 20vh;
+    padding: 1rem;
+    border-radius: 1rem;
+    min-width: 25vw;
+    height: 50vh;
+    backdrop-filter: blur(1rem);
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+input[type=text] ,[type=email] {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: rgb(16, 41, 53);
+    border-radius: 5rem;
+    border: none;
+    font-size: 1em;
+}
+input[type=button]{
+    flex: 1;
+    background-color: #001830;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 5rem;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+input[type=button]:hover{
+    background-color: #026796;
+    
+    animation: bounceIn;
+    transition: 0.5s;
+    animation-duration: 1s;
+}
+/* .button{
+    cursor: pointer;
+}
+.button:hover{
+    
+    animation-duration: 1s;
+}
+.button::after{
+    transition: 0.5s;
+} */
+/* Responsive */
+
+
+@media only screen and (max-width: 900px) {
+    .m_form {
+        padding: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .form {
+        top: 1.2em;
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .formulaire {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .pictures{
+        
+        margin: 1rem 2rem 0 0 ;
+    }
+    
+}
