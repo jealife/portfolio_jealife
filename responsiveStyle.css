@@ -91,8 +91,12 @@
     text-align: center;
     padding: 3rem;
   }
+  /* html,body{
+    overflow: auto;
+  } */
   .down-contact{
     background-position: center;
+    background-attachment: initial;
   }
  }
   
