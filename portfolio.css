@@ -1,4 +1,4 @@
-.portfolio{
+.portfolio {
     justify-content: center;
     background-color: #001830;
     padding: 5em 6em 5em 6em;
@@ -17,7 +17,7 @@
 
 }
 
-.p_image  > div {
+.p_image>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,8 +52,37 @@
     grid-row: span 2;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {}
 
-  }
+li {
+    list-style: none;
+}
+
+#nav-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav-work li {
+    cursor: pointer;
+}
+
+#nav-work li::after {
+    content: "";
+    display: block;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    background: #fff;
+    transition: transform 0.3s ease-out;
+}
+
+#nav-work li:hover::after {
+    transform: scaleX(1)
+}
+
 
 
