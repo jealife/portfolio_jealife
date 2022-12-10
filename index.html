@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="f-FR">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,6 +8,8 @@
   <meta property="og:description" content="La beauté se trouve partout"/>
 
   <title>JEaLiFe·Pictures</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="navBar.css" />
   <link rel="stylesheet" href="index.css">
@@ -172,54 +174,53 @@
     <section class="portfolio " id="portfolio">
       <h2 id="porto">Portfolio</h2>
 
-      <div class="pic-ctn">
-
-        <img src="girl-3.jpg" alt="" class="pic"   oncontextmenu="return false;">
-        <img src="wonder.jpg" alt="" class="pic"   oncontextmenu="return false;">
-        <img src="bg (2).jpg" alt="" class="pic"   oncontextmenu="return false;">
-        <img src="girl.jpg" alt="" class="pic"   oncontextmenu="return false;">
-        <img src="nat.jpg" alt="" class="pic"   oncontextmenu="return false;">
-
-
+      <div class="porto-menu">
+        <ul id="nav-work">
+          <li id="photos">Photos</li>
+          <li id="web-site">Sites Web</li>
+          <li id="logos">Logos</li>
+        </ul>
       </div>
+      <br>
       <div class="grid-wrapper">
-        <div>
-          <img src="girl.jpg" alt="" class="grid-portfolio"   oncontextmenu="return false;">
-        </div>
-        <div>
-          <img src="bg (2).JPG" alt="" class="grid-portfolio"   oncontextmenu="return false;">
-        </div>
-        <div>
-          <img src="bg (3).jpg" alt="" class="grid-portfolio"   oncontextmenu="return false;">
-        </div>
-        <div>
-          <img src="girl-2.jpg" alt="" class="grid-portfolio"   oncontextmenu="return false;">
-        </div>
-        <div>
-          <img src="IMG_0045.jpg" alt="" class="grid-portfolio"   oncontextmenu="return false;">
-        </div>
-        <div>
-          <img src="JEaLiFe·Pictures_1655861446059.jpg" alt="" class="grid-portfolio"   oncontextmenu="return false;">
-        </div>
-        <div>
-          <img src="nat.jpg" alt="" class="grid-portfolio"   oncontextmenu="return false;">
-        </div>
-        <div>
-          <img src="nat2.jpg" alt="" class="grid-portfolio"   oncontextmenu="return false;">
-        </div>
-        <div>
-          <img src="nature.jpg" alt="" class="grid-portfolio"   oncontextmenu="return false;">
-        </div>
-        <div>
-          <img src="wonder.jpg" alt="" class="grid-portfolio"   oncontextmenu="return false;">
-        </div>
-
       </div>
-
-
     </section>
 
   </main>
+  <script>
+    $(document).ready(function(){
+      $("#photos").css("color", "aqua");
+      $(".grid-wrapper").load("photos.html");
+      $("#photos").click(function(){
+        $(".grid-wrapper").load("photos.html");
+        $("#web-site").css("color", "white");
+        $("#logos").css("color", "white");
+        $(this).css("color", "aqua");
+        $(this).css("transition", "0.5s");
+        
+      });
+
+
+      $("#web-site").click(function(){
+        $(".grid-wrapper").load("webSite.html");
+        $("#logos").css("color", "white");
+        $("#photos").css("color", "white");
+        $(this).css("color", "aqua");
+        $(this).css("transition", "0.5s");
+      });
+
+      $("#logos").click(function(){
+        $(".grid-wrapper").load("Logos.html");
+        $("#web-site").css("color", "white");
+        $("#photos").css("color", "white");
+        $(this).css("color", "aqua");
+        $(this).css("transition", "0.5s");
+      });
+
+    });
+  </script>
+
+
   <footer class="footer display-flex ">
     <div class="items">
 
@@ -229,14 +230,11 @@
         <a href="mailto: jealife.pictures@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a>
       </div>
       <div class="copy-right">
-        <span>© 2022 JEaLiFe Pictures</span>
+        <span>&copy; 2022 JEaLiFe Pictures</span>
       </div>
 
 
     </div>
-
-    
-
   </footer>
 
 
