@@ -39,8 +39,8 @@
     display: flex;
     flex-direction: column;
     border: #c2daeb3a solid 1px;
-    min-height: 20vh;
-    padding: 1rem;
+    min-height: 22vh;
+    padding: 2rem 1rem 2rem 1rem;
     border-radius: 1rem;
     min-width: 25vw;
     height: 50vh;
@@ -70,7 +70,7 @@ input[type=button]{
     border: none;
     justify-content: center;
     text-align: center;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
     margin: auto;
     box-sizing: border-box;
     color: #fff;
@@ -101,7 +101,7 @@ input[type=button]:hover{
 
 @media only screen and (max-width: 900px) {
     .m_form {
-        padding: 1rem;
+        padding: 0.8rem;
         justify-content: center;
         text-align: center;
     }
@@ -109,7 +109,7 @@ input[type=button]:hover{
     .form {
         top: 1.2em;
         width: 80vw;
-        height: 50vh;
+        height: 55vh;
     }
 
     .formulaire {
