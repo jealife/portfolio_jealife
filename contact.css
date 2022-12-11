@@ -57,12 +57,11 @@ input[type=text] ,[type=email] {
     display: flex;
     width: 100%;
     padding: 0.2rem 1rem;
-    margin: 8px 0;
     box-sizing: border-box;
     color: rgb(16, 41, 53);
     border-radius: 5rem;
     border: none;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 input[type=button]{
     flex: 1;
