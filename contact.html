@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="f-FR">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
+
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="GridImage.css">
     <link rel="stylesheet" href="text_animation.css">
@@ -38,10 +38,20 @@
 
 
             <form class="form">
-                <input type="text" id="fname" placeholder="nom" name="fname">
-                <input type="text" id="lname" placeholder="Prénom" name="lname">
-                <input type="email" name="" placeholder="E-mail" id="">
-                <input type="text" id="lname" placeholder="En quoi puis-je vous aider?" name="lname">
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Prénom">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail :name@example.com">
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="En quoi puis-vous aider ?"></textarea>
+                </div>
                 <div class="button">
                     <input type="button" value="Envoyer">
                 </div>
