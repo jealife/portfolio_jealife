@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="f-FR">
+<html lang="fr-FR">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="GridImage.css">
     <link rel="stylesheet" href="text_animation.css">
@@ -38,25 +38,57 @@
 
 
             <form class="form">
-                <div class="mb-3">
-                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                <div>
+                    <h2>Contactez moi</h2>
                 </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Prénom">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="Nom">
                 </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail :name@example.com">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="Prénom">
                 </div>
-                <div class="mb-3">
-                    <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="En quoi puis-vous aider ?"></textarea>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="usr" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+
+
+                    <textarea class="form-control" rows="5" id="comment"
+                        placeholder="En quoi puis-je vous aider ? "></textarea>
                 </div>
                 <br>
                 <div class="button">
-                    <input type="button" value="Envoyer">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                        data-target="#myModal">Envoyer</button>
                 </div>
             </form>
+            <div class="form form2" class="animate__animated animate__zoomIn animate__delay-3s">
+                <p>Tel : +212 617541079</p>
+                <p>E-mail : jealife.pictures@gmail.com</p>
+            </div>
+
+
+
+        </div>
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Merci d'avoir cliquer.</p>
+                        </div>
+                        <div class="modal-footer" style="border: none;">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
         <div class="background">
             <div></div>
