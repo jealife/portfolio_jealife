@@ -35,7 +35,7 @@ body {
     min-height: 20vh;
     padding: 4rem 2rem;
     border-radius: 1rem;
-    min-width: 40vw;
+    min-width: 30vw;
     height: auto;
     backdrop-filter: blur(1rem);
     justify-content: center;
@@ -150,21 +150,31 @@ input[type=button]:hover {
     transform: translateX(-50%) translateY(-50%);
 }
 
+@media only screen and (min-width: 700px) and (max-width: 900px)  {
+    .form {
+        top: 1.2em;
+        padding: 4rem 2rem;
+        border-radius: 1rem;
+        width: 50vw;
+        height: 50vh;
+    }
 
+}
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
     .m_form {
-        padding: 1rem;
+        
+        padding: 0.5rem;
         justify-content: center;
         text-align: center;
     }
 
     .form {
         top: 1.2em;
-        padding: 4rem 2rem;
+        padding: 4rem 1rem;
         border-radius: 1rem;
-        min-width: 65vw;
-        height: 50vh;
+        width: 90vw;
+        height: 50%;
     }
 
     .formulaire {
@@ -178,7 +188,6 @@ input[type=button]:hover {
         filter: blur(0.1vw);
         border-radius: 100%;
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(7, 44, 82, 0.9780287114845938) 45%, rgba(0, 212, 255, 1) 100%);
-        width: 50%;
         width: 5em;
         padding: 3em;
         top: 70%;
