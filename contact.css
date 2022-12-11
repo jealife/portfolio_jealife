@@ -81,6 +81,9 @@ input[type=button]:hover {
     transition: 0.5s;
     animation-duration: 1s;
 }
+.footer{
+    bottom: 0;
+}
 
 /* .button{
     cursor: pointer;
@@ -114,7 +117,6 @@ input[type=button]:hover {
     height: 0;
     filter: blur(1vw);
     opacity: 0.8;
-    position: fixed;
 }
 
 .background div:nth-child(1) {
