@@ -20,28 +20,6 @@ body {
     align-items: center;
     padding: 5em;
 }
-html {
-    scroll-behavior: smooth;
-    transition: 0.5s;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-body {
-    background-color: #001830;
-    z-index: -100;
-}
-
-.m_form {
-    min-height: 100vh;
-}
-
-.m_form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5em;
-}
 
 .formulaire {
     display: flex;
@@ -65,21 +43,43 @@ body {
 
 }
 
+.form2{
+    background-color: rgba(255, 255, 255, 0.404);
+    margin: 0 0 0 5em;
+    border-radius: 5rem;
+    min-width: 50vw;
+    left: 2rem;
 
-input[type=text],
-[type=email] {
+}
+.form2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form2:nth-child(*){
+    margin: 1rem;
+}
+
+
+
+
+.form-control  {
     flex: 1;
     display: flex;
     width: 100%;
     padding: 0.9rem 1rem;
-    margin: 8px 0;
+    margin: 5px 0;
     box-sizing: border-box;
     color: rgb(16, 41, 53);
     border-radius: 5rem;
     border: none;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.9em;
 }
-textarea{
+#comment{
     flex: 1;
     display: flex;
     width: 100%;
@@ -87,35 +87,45 @@ textarea{
     margin: 8px 0;
     box-sizing: border-box;
     color: rgb(16, 41, 53);
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     border: none;
     font-family: 'Poppins', sans-serif;
     font-size: 0.9em;
 }
-input[type=button] {
+.btn {
     flex: 1;
     background-color: #001830;
     border: none;
     justify-content: center;
     text-align: center;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     margin: auto;
     box-sizing: border-box;
     color: #fff;
     border-radius: 5rem;
     border: none;
-    font-size: 1em;
+    font-size: 1.1em;
     cursor: pointer;
 }
+#myModal{
+    color: #001830;
+    margin-top: 10%;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+}
 
-input[type=button]:hover {
+.btn:hover {
     background-color: #026796;
 
     animation: bounceIn;
     transition: 0.5s;
     animation-duration: 1s;
 }
-
+.modal-body p{
+    color: #001830;
+}
 
 /* .button{
     cursor: pointer;
@@ -204,21 +214,25 @@ input[type=button]:hover {
 @media only screen and (max-width: 700px) {
     .m_form {
         
-        padding: 0.5rem;
+        flex-direction: column-reverse;
+        padding: 1rem;
         justify-content: center;
         text-align: center;
     }
 
     .form {
         top: 1.2em;
-        padding: 4rem 1rem;
+        padding: 1rem 1rem 2rem 1rem;
         border-radius: 1rem;
         width: 90vw;
         height: 50%;
     }
-
+    .form2{
+        margin: 0 0 2rem 0;
+    }
     .formulaire {
-        display: flex;
+        padding: 9rem 0 0 0;
+        flex-direction: column-reverse;
         justify-content: center;
         align-content: center;
         align-items: center;
@@ -256,202 +270,9 @@ input[type=button]:hover {
         transform: translateX(-50%) translateY(-50%);
     }
 
-}
-.formulaire {
-    display: flex;
-}
-
-.form {
-    text-align: center;
-    background-color: #3144528f;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    border: #c2daeb3a solid 1px;
-    min-height: 20vh;
-    padding: 4rem 2rem;
-    border-radius: 1rem;
-    min-width: 30vw;
-    height: auto;
-    backdrop-filter: blur(1rem);
-    justify-content: center;
-    text-align: center;
-
-}
-
-
-input[type=text],
-[type=email] {
-    flex: 1;
-    display: flex;
-    width: 100%;
-    padding: 0.9rem 1rem;
-    margin: 8px 0;
-    box-sizing: border-box;
-    color: rgb(16, 41, 53);
-    border-radius: 5rem;
-    border: none;
-    font-size: 0.9em;
-}
-
-input[type=button] {
-    flex: 1;
-    background-color: #001830;
-    border: none;
-    justify-content: center;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    margin: auto;
-    box-sizing: border-box;
-    color: #fff;
-    border-radius: 5rem;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-input[type=button]:hover {
-    background-color: #026796;
-
-    animation: bounceIn;
-    transition: 0.5s;
-    animation-duration: 1s;
-}
-.footer{
-    bottom: 0;
-}
-
-/* .button{
-    cursor: pointer;
-}
-.button:hover{
-    
-    animation-duration: 1s;
-}
-.button::after{
-    transition: 0.5s;
-} */
-/* Responsive */
-
-.background {
-    text-align: center;
-    font-size: 3em;
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-grow: 1;
-    z-index: -1;
-}
-
-.background div {
-    position: absolute;
-    border-radius: 100%;
-    height: 0;
-    filter: blur(1vw);
-    opacity: 0.8;
-}
-
-.background div:nth-child(1) {
-    filter: blur(0vw);
-    border-radius: 100%;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(7, 44, 82, 0.9780287114845938) 45%, rgba(0, 212, 255, 1) 100%);
-    width: 50%;
-    width: 15%;
-    padding: 15%;
-    top: 50%;
-    left: 35%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.background div:nth-child(2) {
-    border-radius: 100%;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(7, 44, 82, 0.9780287114845938) 45%, rgba(0, 212, 255, 1) 100%);
-    width: 50%;
-    height: 80%;
-    padding: 25%;
-    top: -5em;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.background div:nth-child(3) {
-    border-radius: 100%;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(7, 44, 82, 0.9780287114845938) 45%, rgba(0, 212, 255, 1) 100%);
-    width: 50%;
-    height: 80%;
-    padding: 25%;
-    left: 99%;
-    top: 10%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-@media only screen and (min-width: 700px) and (max-width: 900px)  {
-    .form {
-        top: 1.2em;
-        padding: 4rem 2rem;
-        border-radius: 1rem;
-        width: 50vw;
-        height: 50vh;
-    }
-
-}
-
-@media only screen and (max-width: 700px) {
-    .m_form {
-        
-        padding: 0.5rem;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .form {
-        top: 1.2em;
-        padding: 4rem 1rem;
-        border-radius: 1rem;
-        width: 90vw;
-        height: 50%;
-    }
-
-    .formulaire {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-
-    .background div:nth-child(1) {
-        filter: blur(0.1vw);
-        border-radius: 100%;
-        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(7, 44, 82, 0.9780287114845938) 45%, rgba(0, 212, 255, 1) 100%);
-        width: 5em;
-        padding: 3em;
-        top: 70%;
-        left: 15%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    .background div:nth-child(2) {
-        border-radius: 100%;
-        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(7, 44, 82, 0.9780287114845938) 45%, rgba(0, 212, 255, 1) 100%);
-        width: 50%;
-        height: 80%;
-        padding: 25%;
-        top: -5em;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    .background div:nth-child(3) {
-        border-radius: 100%;
-        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(7, 44, 82, 0.9780287114845938) 45%, rgba(0, 212, 255, 1) 100%);
-        width: 50%;
-        width: 5em;
-        padding: 5em;
-        left: 99%;
-        top: -16%;
-        transform: translateX(-50%) translateY(-50%);
+    #myModal{
+        color: #001830;
+        margin-top: 25%;
     }
 
 }
