@@ -5,18 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:description" content="La beauté se trouve partout"/>
+  <meta property="og:description" content="La beauté se trouve partout" />
 
   <title>JEaLiFe·Pictures</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="navBar.css" />
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="GridImage.css">
-    <link rel="stylesheet" href="text_animation.css">
-    <link rel="stylesheet" href="responsiveStyle.css">
+  <link rel="stylesheet" href="GridImage.css">
+  <link rel="stylesheet" href="text_animation.css">
+  <link rel="stylesheet" href="responsiveStyle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="footer.css">
   <script src="https://kit.fontawesome.com/0d5ce9c423.js" crossorigin="anonymous"></script>
@@ -45,7 +45,7 @@
         <a href="#" aria-current="page">Accueil</a>
         <a href="#about-me">A propos de moi</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#">Témoignages</a>
+        <a href="#testimonial">Témoignages</a>
         <a href="contact.html" id="contact">Contact</a>
       </div>
     </div>
@@ -59,22 +59,24 @@
         <span class="vertical-line"></span>
 
         <a href="www.facebook.com"><i class="fa-brands fa-facebook fa-xl"></i></a>
-        <a href="https://www.instagram.com/jealife_pictures/?igshid=12tbfqazjltoy&hl=fr"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href="https://www.instagram.com/jealife_pictures/?igshid=12tbfqazjltoy&hl=fr"><i
+            class="fa-brands fa-instagram fa-xl"></i></a>
         <a href="mailto: jealife.pictures@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a>
-        
+
         <span class="vertical-line"></span>
         <br>
         <hr class="hr_2" size="1px">
       </div>
 
       <div class="name">
-        <div id="name" >
-          <p  class="animate__animated animate__bounceInRight " >JEaLiFe· Pictures</p>
+        <div id="name">
+          <p class="animate__animated animate__bounceInRight ">JEaLiFe· Pictures</p>
         </div>
 
-        <div class="word line-1 anim-typewriter" > 
+        <div class="word line-1 anim-typewriter">
           <p>
-            <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im JEaLiFe.", "I am Creative.", "I Love Design and Photography.", "I Love to Develop." ]'>
+            <a href="" class="typewrite" data-period="2000"
+              data-type='[ "Hi, Im JEaLiFe.", "I am Creative.", "I Love Design and Photography.", "I Love to Develop." ]'>
               <span class="wrap"></span>
             </a>
         </div>
@@ -160,7 +162,8 @@
       <div class="simple-contact">
 
         <div class="child_spl_c1">
-          <p id="cont-txt"    class="animate__animated animate__zoomIn animate__delay-2s">Capturez le plus beau moment de votre vie</p>
+          <p id="cont-txt" class="animate__animated animate__zoomIn animate__delay-2s">Capturez le plus beau moment de
+            votre vie</p>
         </div>
         <div class="child_spl_c2">
           <button class="btn-contact" type="button"><a href="contact.html">Contactez moi</a> </button>
@@ -183,26 +186,32 @@
       </div>
       <br>
       <div class="grid-wrapper">
+
       </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+
     </section>
 
   </main>
   <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
+      $(".testimonial").load("temoignage.html")
       $(".footer").load("footer.html")
       $("#photos").css("color", "aqua");
       $(".grid-wrapper").load("photos.html");
-      $("#photos").click(function(){
+      $("#photos").click(function () {
         $(".grid-wrapper").load("photos.html");
         $("#web-site").css("color", "white");
         $("#logos").css("color", "white");
         $(this).css("color", "aqua");
         $(this).css("transition", "0.5s");
-        
+
       });
 
 
-      $("#web-site").click(function(){
+      $("#web-site").click(function () {
         $(".nav-bar").load("navBar.html")
 
         $(".grid-wrapper").load("webSite.html");
@@ -212,7 +221,7 @@
         $(this).css("transition", "0.5s");
       });
 
-      $("#logos").click(function(){
+      $("#logos").click(function () {
         $(".grid-wrapper").load("logos.html");
         $("#web-site").css("color", "white");
         $("#photos").css("color", "white");
