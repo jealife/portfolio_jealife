@@ -154,7 +154,7 @@ nav {
     background-color: #001830cc ;
     backdrop-filter: blur(4px);
     height: 100vh;
-    padding: 15px 50px 15px 20px;
+    padding: 15px 50px 15px 50px;
     transform: translate(-100%);
   }
   .navlinks-container a{
