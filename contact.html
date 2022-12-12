@@ -37,29 +37,31 @@
         <div class="formulaire">
 
 
-            <form class="form">
+            <form class="form" id="contactme" method="post" enctype="text/plain">
                 <div>
                     <h2>Contactez moi</h2>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="usr" placeholder="Nom">
+                    <input type="name" name="name" class="form-control" id="name" class="form-control"
+                        placeholder="Nom">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="usr" placeholder="Prénom">
+                    <input type="name" name="lastname" class="form-control" id="lastname" placeholder="Prénom">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="usr" placeholder="E-mail">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                 </div>
                 <div class="form-group">
-
-
-                    <textarea class="form-control" rows="5" id="comment"
-                        placeholder="En quoi puis-je vous aider ? "></textarea>
+                    <input type="text" name="Subject" class="form-control" id="Subject" placeholder="Service" />
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="Message" name="Message" rows="3"
+                        placeholder="Message"></textarea>
                 </div>
                 <br>
                 <div class="button">
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
-                        data-target="#myModal">Envoyer</button>
+                    <button type="submit" class="btn btn-primary" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"
+                    >Envoyer</button>
                 </div>
             </form>
             <div class="form form2" class="animate__animated animate__zoomIn animate__delay-3s">
@@ -97,6 +99,45 @@
         </div>
     </Main>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">      (function () {
+            emailjs.init("BeLsZHIMlFuAUD19T");
+        })();
+    </script>
+    <script>
+        emailjs.send("service_eaorset", "template_qq5acec");
+    </script>
+
+
+
+
+    <script>
+        // listen to the form submission
+        document
+            .getElementById("contactme")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const serviceID = "service_eaorset";
+                const templateID = "template_qq5acec";
+
+                // send the email here
+                emailjs.sendForm(serviceID, templateID, this).then(
+                    (response) => {
+                        document.getElementById("name").value = "";
+                        document.getElementById("lastname").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("Subject").value = "";
+                        document.getElementById("Message").value = "";
+                    },
+                    (error) => {
+                        console.log("FAILED...", error);
+                        alert("FAILED...", error);
+                    }
+                );
+            });
+    </script>
     <footer class="footer display-flex ">
 
     </footer>
