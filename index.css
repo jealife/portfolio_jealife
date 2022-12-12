@@ -261,8 +261,14 @@ html {
 .portfolio {
     justify-content: center;
     background-color: rgb(231, 231, 231);
-    padding: 5em 0 5em 0;
+    padding: 5rem 0;
 }
 
 
+/* Last section */
+
+.testimonial{
+    background-color: #08355f;
+    padding: 5rem 0 0 0 ;
+}
 
