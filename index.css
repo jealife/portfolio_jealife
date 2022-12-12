@@ -19,7 +19,7 @@ html {
 
 .m_parent {
     background-color: #43535e;
-    background-image: url(./bg\ \(2\).JPG);
+    background-image: url(bg\(1\).webp);
     background-size: cover;
     background-blend-mode: soft-light;
     background-attachment: fixed;
@@ -124,7 +124,7 @@ html {
 
     width: 41vw;
     height: 50vh;
-    background-image: url(nat2.jpg);
+    background-image: url(nat2.webp);
     border-radius: 4px;
     background-size: cover;
 }
@@ -132,7 +132,7 @@ html {
 .sec-image {
     border-radius: 4px;
     min-height: 80vh;
-    background-image: url(nature.jpg);
+    background-image: url(nature.webp);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -191,7 +191,7 @@ html {
     align-items: center;
     min-height: 50vh;
     background-color: #545454;
-    background-image: url(wonder.jpg);
+    background-image: url(wonder.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
